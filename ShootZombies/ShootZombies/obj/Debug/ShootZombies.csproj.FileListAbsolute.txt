@@ -9,11 +9,3 @@ D:\C#\ShootZombies\ShootZombies\obj\Debug\ShootZombies.csproj.GenerateResource.c
 D:\C#\ShootZombies\ShootZombies\obj\Debug\ShootZombies.csproj.CoreCompileInputs.cache
 D:\C#\ShootZombies\ShootZombies\obj\Debug\ShootZombies.exe
 D:\C#\ShootZombies\ShootZombies\obj\Debug\ShootZombies.pdb
-D:\Game\New folder\ShootZombies\ShootZombies\obj\Debug\ShootZombies.csproj.AssemblyReference.cache
-D:\Game\New folder\ShootZombies\ShootZombies\obj\Debug\ShootZombies.csproj.SuggestedBindingRedirects.cache
-D:\Game\New folder\ShootZombies\ShootZombies\obj\Debug\ShootZombies.Form1.resources
-D:\Game\New folder\ShootZombies\ShootZombies\obj\Debug\ShootZombies.Properties.Resources.resources
-D:\Game\New folder\ShootZombies\ShootZombies\obj\Debug\ShootZombies.csproj.GenerateResource.cache
-D:\Game\New folder\ShootZombies\ShootZombies\obj\Debug\ShootZombies.csproj.CoreCompileInputs.cache
-D:\Game\New folder\ShootZombies\ShootZombies\obj\Debug\ShootZombies.exe
-D:\Game\New folder\ShootZombies\ShootZombies\obj\Debug\ShootZombies.pdb
