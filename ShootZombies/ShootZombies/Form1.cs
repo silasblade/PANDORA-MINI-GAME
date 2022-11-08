@@ -220,6 +220,11 @@ namespace ShootZombies
             }
         }
 
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void ShootBullet(string direction)
         {
             Bullet shootBullet = new Bullet();
@@ -247,6 +252,7 @@ namespace ShootZombies
         {
             PictureBox ammo = new PictureBox();
             ammo.Image = Properties.Resources.ammo_Image;
+            ammo.Width = 50;
             ammo.Left = ranNum.Next(10, this.ClientSize.Width - ammo.Width);
             ammo.Top = ranNum.Next(60, this.ClientSize.Height - ammo.Height);
             ammo.Tag = "ammo";

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.txtAmmo = new System.Windows.Forms.Label();
             this.txtKill = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -41,23 +42,22 @@
             // txtAmmo
             // 
             this.txtAmmo.AutoSize = true;
-            this.txtAmmo.BackColor = System.Drawing.Color.DimGray;
+            this.txtAmmo.BackColor = System.Drawing.Color.DarkOrange;
             this.txtAmmo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAmmo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtAmmo.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txtAmmo.Location = new System.Drawing.Point(32, 18);
             this.txtAmmo.Name = "txtAmmo";
             this.txtAmmo.Size = new System.Drawing.Size(107, 29);
             this.txtAmmo.TabIndex = 0;
             this.txtAmmo.Text = "Ammo: 0";
-            this.txtAmmo.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtKill
             // 
             this.txtKill.AutoSize = true;
-            this.txtKill.BackColor = System.Drawing.Color.DimGray;
+            this.txtKill.BackColor = System.Drawing.Color.Firebrick;
             this.txtKill.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtKill.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txtKill.Location = new System.Drawing.Point(263, 18);
+            this.txtKill.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtKill.Location = new System.Drawing.Point(203, 18);
             this.txtKill.Name = "txtKill";
             this.txtKill.Size = new System.Drawing.Size(72, 29);
             this.txtKill.TabIndex = 1;
@@ -66,10 +66,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.DimGray;
+            this.label2.BackColor = System.Drawing.Color.DarkOliveGreen;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(501, 18);
+            this.label2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.label2.Location = new System.Drawing.Point(340, 18);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(88, 29);
             this.label2.TabIndex = 2;
@@ -79,14 +79,15 @@
             // healthBar
             // 
             this.healthBar.BackColor = System.Drawing.Color.Black;
-            this.healthBar.Location = new System.Drawing.Point(583, 24);
+            this.healthBar.Location = new System.Drawing.Point(421, 18);
             this.healthBar.Name = "healthBar";
-            this.healthBar.Size = new System.Drawing.Size(331, 23);
+            this.healthBar.Size = new System.Drawing.Size(275, 29);
             this.healthBar.TabIndex = 3;
             this.healthBar.Value = 100;
             // 
             // player
             // 
+            this.player.BackColor = System.Drawing.SystemColors.ControlDark;
             this.player.Image = global::ShootZombies.Properties.Resources.up;
             this.player.Location = new System.Drawing.Point(430, 468);
             this.player.Name = "player";
@@ -105,13 +106,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(962, 553);
+            this.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(957, 553);
             this.Controls.Add(this.player);
             this.Controls.Add(this.healthBar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtKill);
             this.Controls.Add(this.txtAmmo);
+            this.DoubleBuffered = true;
             this.MaximumSize = new System.Drawing.Size(1000, 600);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -133,5 +137,7 @@
         private System.Windows.Forms.PictureBox player;
         private System.Windows.Forms.Timer GameTimer;
     }
+
+
 }
 
